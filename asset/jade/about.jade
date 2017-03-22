@@ -1,0 +1,43 @@
+//output:../../about.html, pretty:false
+
+doctype html
+html(lang='en')
+    head
+        title Dignitas Youth UofT
+        meta(name='copyright', content=COPYRIGHT)
+        meta(name='description', content=DESCRIPTION)
+        meta(name='keywords', content=KEYWORDS)
+        meta(name='viewport', content=width=device-width, initial-scale=1)
+        link(href='styles.min.css', rel='stylesheet')
+
+    body
+        include navbar
+        .container
+            .row
+                .about-header
+            h1 Our Mission
+            .row
+                .missions
+                    h3 We coordinate advocacy campaigns and events to engage the student community in the global response to HIV and other diseases.
+                    p <br>
+                    p Dignitas International Youth Club (University of Toronto Chapter) seeks to provide a quality of life with dignity for children, youth and families affected by HIV/AIDS in resource-poor settings. We plan and execute a number of campus events such as seminars, coffeehouses, and fundraisers to promote HIV/AIDS-related issues among the university community. 
+                .missions
+                    h3 
+            h1 Our Goals
+            .row
+                .goals
+                    .goals-col
+                        h3 To provide quality of life for the world’s most vulnerable populations affected by HIV/AIDS.
+                    .goals-col
+                        h3 To educate intervention initiatives, current scientific research, socioeconomic issues, and preventative strategies.
+                    .goals-col
+                        h3 To engage the students and the local, national, and international community to bring positive changes.
+            button.button1 Read More About Dignitas
+            h1 Our Team
+            .row
+                .team
+                    h1 das
+            include contact
+            
+        include footer
+        script(src='asset/js/main.js')

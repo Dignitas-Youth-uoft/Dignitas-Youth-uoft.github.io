@@ -3,7 +3,7 @@
 doctype html
 html(lang='en')
     head
-        title site name
+        title Dignitas Youth UofT
         meta(name='copyright', content=COPYRIGHT)
         meta(name='description', content=DESCRIPTION)
         meta(name='keywords', content=KEYWORDS)
@@ -11,7 +11,42 @@ html(lang='en')
         link(href='styles.min.css', rel='stylesheet')
 
     body
-        import navbar
-
-        import footer
-        script(src='asset/js/main.js')
+        include navbar
+        .container
+            .row
+                .home-header
+            h1 About Us
+            .row
+                .about-us-cols
+                    h2 Dignitas Youth at UofT is a student group of young leaders united for Change.
+                    a(href="#") Find out more about us!
+                .about-us-cols
+                    h2 More<br>About<br>Us
+            h1 Recent Activities
+            .row
+                .recent-activities-left
+                    .activities-left-1
+                        .activites-content
+                            h3 Helloe
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                            a Read More
+                    .activities-left-2
+                        .activites-content
+                            h3 Hello 2
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor in
+                            a Read More
+                .recent-activities-right
+                    .activites-content
+                        h3 sdfad 3
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        a Read More
+            button.button1 Read More Posts
+                    
+            include contact
+            
+        include footer
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js", type="text/javascript")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js", type="text/javascript")
+        script(src="./main.js", type="text/javascript")
+        script.
+            window.onload = navbar;
