@@ -1,0 +1,33 @@
+//output:../../30dec2016.html, pretty:false
+
+doctype html
+html(lang='en')
+    head
+        title Dignitas Youth UofT - World AIDS Day 2016
+        meta(name='copyright', content=COPYRIGHT)
+        meta(name='description', content=DESCRIPTION)
+        meta(name='keywords', content=KEYWORDS)
+        meta(name='viewport', content=width=device-width, initial-scale=1)
+        link(href='styles.min.css', rel='stylesheet')
+
+    body
+        include navbar
+        .container
+            .blog
+                .post.reveal
+                    img(src="asset/img/photos/seminar.jpg")
+                    h2 World AIDS Day 2016
+                    h4 30 December, 2016
+                    p We are happy to be collaborating with the University of Toronto International Health Program to host the annual World AIDS Day, and it is not too late to register! This year’s theme is “Disclosure”, and we will have a moderated panel with our honourable speakers who will discuss how HIV status disclosure is influenced in the context of law, public health, women’s health, sociology, science and research, and more.
+                    p Join our Snapchat campaign to raise awareness using our Geofilter at the University of Toronto’s Robarts Library, Gerstein Library, Medical Sciences Building, Hart House, and Sidney Smith. Send U of T World AIDS Day your photo to join the campaign for solidarity!
+                    .links-red
+                        a(href="https://www.facebook.com/events/1255136827840592/") Check out the Facebook event for more information
+                    p Come for an insightful discussion, meeting like-minded people, and free food!
+                    .links-black
+                        a 
+                            i.fa.fa-arrow-left.fa-1x
+                            |  Go back to all posts
+
+            include contact
+        include footer
+        include scripts
