@@ -1,43 +1,63 @@
 .navbar
     min-width: 100%
     min-height: 80px
-    position: fixed
-    display: flex
-    z-index: 2
 
-.navbar-items
-    box-sizing: border-box
+.navbar-logo
     text-align: center
-    background-color: white
-    padding: 25px 20px
+
+.navbar-social
+    width: 5%
+    position: fixed
+    top: 20px
+    left: 0
+    display: flex
+    flex-direction: column
+    text-align: center
+    z-index: 2
+    i
+        padding-bottom: 20px
+        &:hover
+            color: $blue-shadow
+.navbar-logo img
+    padding-top: 50px
+    width: 200px
+.navbar-menu
+    width: 5%
+    position: fixed
+    top: 20px
+    right: 0
+    text-align: center
+    z-index: 2
     a
         color: $black
-
-.navbar-items:nth-child(1)
-    flex: 1
-    text-align: left
-    padding-left: 30px
-.navbar-items:nth-child(2)
-    flex: 9
-.navbar-items:nth-child(3)
-    flex: 1
-    background-color: $red
-    text-align: right
-    i
-        padding: 5px 20px 0 20px
-        color: rgba(255,255,255,0.8)
         &:hover
-            color: white
+            color: $blue-shadow
 
 #full-menu
     position: fixed
     top: -100%
-    width: 100%
+    left: 5%
+    width: 90%
     height: 100%
-    background-color: transparentize($red, 0.1)
+    background-color: darken($blue-shadow, 40)
+    // background-color: black
+    font-size: 1em
+    color: white
+    font-weight: 600
     z-index: 1
     display: flex
-    // -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%)
-    // clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%)
+    text-align: center
+    // -webkit-clip-path: polygon(20% 0, 100% 0, 100% 80%, 0 100%)
+    // clip-path: polygon(20% 0, 100% 0, 80% 100%, 0 100%)
+    ul
+        margin: auto
+        line-height: 2em
+        li
+            a
+                padding-bottom: 10px
+                text-decoration: none
+                border-bottom: solid 4px $white
+                &:hover
+                    border-bottom: solid 4px $blue
 #full-menu.active
-    top: 80px
+    top: 0

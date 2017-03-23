@@ -1,0 +1,37 @@
+//output:../../blog.html, pretty:false
+
+doctype html
+html(lang='en')
+    head
+        title Dignitas Youth UofT
+        meta(name='copyright', content=COPYRIGHT)
+        meta(name='description', content=DESCRIPTION)
+        meta(name='keywords', content=KEYWORDS)
+        meta(name='viewport', content=width=device-width, initial-scale=1)
+        link(href='styles.min.css', rel='stylesheet')
+
+    body
+        include navbar
+        .container
+            .blog
+                .post
+                    .blog-date
+                    .blog-details
+                        .blog-th
+                            h2 HIV/AIDS Research Seminar
+                            h4 13 Jan, 2016
+                            p Hear from the world’s leading researchers in HIV/AIDS and their current progress in emerging HIV prevention strategies and HIV-related health interventions.
+                            .links.black
+                                a Read More
+                .post
+                    .blog-date
+                    .blog-details
+                        img(src="asset/img/photos/seminar.jpg")
+                        h2 HIV/AIDS Research Seminar
+                        h4 13 Jan, 2016
+                        p Hear from the world’s leading researchers in HIV/AIDS and their current progress in emerging HIV prevention strategies and HIV-related health interventions.
+                        .links.black
+                            a Read More
+            include contact
+        include footer
+        include scripts
