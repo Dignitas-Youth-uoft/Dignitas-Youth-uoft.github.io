@@ -1,89 +1,105 @@
 body
-    height: 100vh
-    width: 100vw
-    margin: 0
-    background-color: $white
+  height: 100vh
+  width: 100vw
+  margin: 0
+  background-color: $white
+
+  @media screen and (max-width: 700px)
+    background-color: $blue
 
 .container
-    padding: 60px 5% 0 5%
+  padding: 60px 5% 0 5%
+
 .row
-    color: $white
-    max-width: 1400px
-    margin: 0 auto 20px auto
-    display: flex
+  color: $white
+  max-width: 1400px
+  margin: 0 auto 20px auto
+  display: flex
 
 // Header
 .header
-    width: 100%
-    height: 70vh
-    -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%)
-    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%)
-    // -webkit-clip-path: polygon(50% 0%, 100% 5%, 100% 95%, 50% 100%, 0 95%, 0 5%)
-    // clip-path: polygon(50% 0%, 100% 5%, 100% 95%, 50% 100%, 0 95%, 0 5%)
-    // -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%)
-    // clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%)
+  width: 100%
+  height: 70vh
+      -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%)
+  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%)
+
+  // -webkit-clip-path: polygon(50% 0%, 100% 5%, 100% 95%, 50% 100%, 0 95%, 0 5%)
+  // clip-path: polygon(50% 0%, 100% 5%, 100% 95%, 50% 100%, 0 95%, 0 5%)
+  // -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%)
+  // clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%)
+
 .home-header
-    @extend .header
-    background: url("asset/img/photos/home-header2.jpg")
-    background-size: cover
-    &:before
-        position: absolute
-        top: 50px
-        left: 50px
-        width: 500px
-        height: 500px
-        background-color: black
+  @extend .header
+
+  background: url("asset/img/photos/home-header2.jpg")
+  background-size: cover
+
+  &:before
+    position: absolute
+    top: 50px
+    left: 50px
+    width: 500px
+    height: 500px
+    background-color: black
 
 .about-header
-    @extend .header
-    background: url("asset/img/photos/about-header.jpg")
-    background-size: cover
+  @extend .header
+
+  background: url("asset/img/photos/about-header.jpg")
+  background-size: cover
 
 // footer
 .footer
-    background-color: darken($dark-blue-shadow, 5)
-    padding: 20px 5% 20px 5%
-    color: transparentize($white, 0.5)
-    text-align: center
-    p
-        font-size: 1.2em
+  background-color: darken($dark-blue-shadow, 5)
+  padding: 20px 5% 20px 5%
+  color: transparentize($white, 0.5)
+  text-align: center
+
+  p
+    font-size: 1.2em
 
 // contact
 .contact
-    margin-top: 80px
+  margin-top: 80px
+  color: $white
+  display: flex
+  padding: 100px 50px 100px 50px
+
+  // background-color: $dark-blue-shadow
+  background-color: $blue-shadow
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%)
+  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%)
+
+  h1
+    margin-top: 0
     color: $white
-    display: flex
-    padding: 100px 50px 100px 50px
-    // background-color: $dark-blue-shadow
-    background-color: $blue-shadow
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%)
-    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%)
-    h1
-        margin-top: 0
-        color: $white
-        &:before
-            border-bottom: 4px solid $white
+
+    &:before
+      border-bottom: 4px solid $white
+
 .contact-right
-    flex: 2
-    i
-        margin: 40px 20px 0 0
-        color: transparentize($white, 0.4)
-        &:hover
-            color: $white
+  flex: 2
+
+  i
+    margin: 40px 20px 0 0
+    color: transparentize($white, 0.4)
+
+    &:hover
+      color: $white
 
 .contact-left
-    margin: auto
-    flex: 1
-    padding-right: 80px
-
+  margin: auto
+  flex: 1
+  padding-right: 80px
 
 // HOMEPAGE
 // About Us - homepage
 .about-us-cols:nth-child(1)
-    background-color: $blue
-    flex: 4
-    margin-right: 30px
-    padding: 90px
+  background-color: $blue
+  flex: 4
+  margin-right: 30px
+  padding: 90px
+
 // .about-us-cols:nth-child(2)
 //     background-color: $white
 //     flex: 1
@@ -91,90 +107,113 @@ body
 //     padding: 70px
 // recent-activites - homepage
 .recent-activities-left
-    flex: 1
-    flex-direction: column
-    display: flex
+  flex: 1
+  flex-direction: column
+  display: flex
+
 .activities-left-1
-    position: relative
-    background-color: $red-shadow
-    padding: 40px
-    margin: 0 20px 20px 0
-    flex: 3
-    min-height: 300px
+  position: relative
+  background-color: $red-shadow
+  padding: 40px
+  margin: 0 20px 20px 0
+  flex: 3
+  min-height: 300px
+
 .activities-left-2
-    position: relative
-    background-color: $red-highlight
-    padding: 40px
-    margin: 0 20px 20px 0
-    flex: 2
-    min-height: 200px
+  position: relative
+  background-color: $red-highlight
+  padding: 40px
+  margin: 0 20px 20px 0
+  flex: 2
+  min-height: 200px
+
 .recent-activities-right
-    position: relative
-    margin-bottom: 20px
-    flex: 2
-    background-color: $red
-    min-height: 500px
+  position: relative
+  margin-bottom: 20px
+  flex: 2
+  background-color: $red
+  min-height: 500px
+
 .activites-content
-    position: absolute
-    left: 15px
-    bottom: 20px
-    padding-right: 15px
-    h4
-        margin-bottom: 10px
-    h3
-        margin-bottom: 20px
-    p
-        margin-bottom: 10px
+  position: absolute
+  left: 15px
+  bottom: 20px
+  padding-right: 15px
+
+  h4
+    margin-bottom: 10px
+
+  h3
+    margin-bottom: 20px
+
+  p
+    margin-bottom: 10px
+
 .activites-tag
-    position: absolute
-    top: 15px
-    left: 15px
-    background-color: $red-shadow
-    padding: 8px 10px 5px 10px
-    h4
-        color: $white
+  position: absolute
+  top: 15px
+  left: 15px
+  background-color: $red-shadow
+  padding: 8px 10px 5px 10px
+
+  h4
+    color: $white
+
 // ABOUT
 .about-header
-    @extend .header
+  @extend .header
+
 .missions:nth-child(1)
-    background-color: $blue-highlight
-    flex: 1
-    margin-right: 30px
-    padding: 90px
+  background-color: $blue-highlight
+  flex: 1
+  margin-right: 30px
+  padding: 90px
+
 .missions:nth-child(2)
-    background-color: $blue-shadow
-    flex: 1
-    text-align: center
-    padding: 70px
+  background-color: $blue-shadow
+  flex: 1
+  text-align: center
+  padding: 70px
+
 .goals
-    display: flex
-    justify-content: space-between
+  display: flex
+  justify-content: space-between
+
 .goals-col
-    padding: 80px 40px
-    margin-bottom: 20px
-    box-sizing: border-box
-    flex-basis: 32%
-    text-align: center
+  padding: 80px 40px
+  margin-bottom: 20px
+  box-sizing: border-box
+  flex-basis: 32%
+  text-align: center
+
 .goals-col:nth-child(1)
-    background-color: $red
+  background-color: $red
+
 .goals-col:nth-child(2)
-    background-color: $red-shadow
+  background-color: $red-shadow
+
 .goals-col:nth-child(3)
-    background-color: $red
+  background-color: $red
+
 // Blogs
 .blog
-    padding: 20px 20% 20px 20%
-    background-color: white
+  padding: 20px 20% 20px 20%
+  background-color: white
+
 .post
-    padding: 40px 0
-    img
-        width: 100%
-        padding-bottom: 30px
-        background-size: 100% auto
-    h4
-        padding-bottom: 20px
-        padding-left: 2px
-    p
-        padding-bottom: 10px
-    .links-black
-        padding-top: 30px
+  padding: 40px 0
+
+  img
+    width: 100%
+    padding-bottom: 30px
+    background-size: 100% auto
+
+  h4
+    padding-bottom: 20px
+    padding-left: 2px
+
+  p
+    padding-bottom: 10px
+
+  .links-black
+    padding-top: 30px

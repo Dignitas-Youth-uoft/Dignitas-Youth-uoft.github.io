@@ -15,11 +15,11 @@
     text-align: center
     z-index: 2
     a
-        color: $black
+        color: transparentize($black, 0.3)
         font-size: 1em
         padding-bottom: 20px
         &:hover
-            color: $blue-shadow
+            color: $black
 .navbar-logo img
     padding-top: 50px
     width: 200px
@@ -31,9 +31,9 @@
     text-align: center
     z-index: 2
     a
-        color: $black
+        color: transparentize($black, 0.3)
         &:hover
-            color: $blue-shadow
+            color: $black
 
 #full-menu
     position: fixed
@@ -44,7 +44,6 @@
     background-color: darken($blue-shadow, 40)
     // background-color: black
     font-size: 1em
-    color: white
     font-weight: 600
     z-index: 1
     display: flex
@@ -56,10 +55,12 @@
         line-height: 2em
         li
             a
+                color: transparentize($white, 0.3)
                 padding-bottom: 10px
                 text-decoration: none
-                border-bottom: solid 4px $white
+                border-bottom: solid 4px transparentize($white, 0.3)
                 &:hover
+                    color: $white
                     border-bottom: solid 4px $blue
 #full-menu.active
     top: 0
