@@ -47,9 +47,9 @@
   left: 5%
   width: 90%
   height: 100%
-  background-color: darken($blue-shadow, 40)
 
-  // background-color: black
+  // background-color: darken($blue-shadow, 40)
+  background-color: $white
   font-size: 1em
   font-weight: 600
   z-index: 1
@@ -64,13 +64,15 @@
 
     li
       a
-        color: transparentize($white, 0.3)
+        font-family: $font-primary
+        color: transparentize($black, 0.3)
         padding-bottom: 10px
         text-decoration: none
-        border-bottom: solid 4px transparentize($white, 0.3)
+        border-bottom: solid 4px transparentize($black, 0.3)
+        transform: all 1s linear
 
         &:hover
-          color: $white
+          color: $black
           border-bottom: solid 4px $blue
 
 #full-menu.active
