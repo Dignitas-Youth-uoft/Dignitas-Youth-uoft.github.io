@@ -65,16 +65,34 @@
     li
       a
         font-family: $font-primary
-        color: transparentize($black, 0.3)
+        color: transparentize($black, 0.2)
         padding-bottom: 10px
         text-decoration: none
-        border-bottom: solid 4px transparentize($black, 0.3)
-        transition: all 0.5s ease-in-out
-        -webkit-transition: all 0.5s ease-in-out
+
+        // border-bottom: solid 4px transparentize($black, 0.2)
+        // transition: all 0.5s ease-in-out
+        // -webkit-transition: all 0.5s ease-in-out
+        position: relative
+
+        &:before
+          position: absolute
+          content: ""
+          width: 40%
+          height: 1px
+          bottom: 0
+          border-bottom: solid 4px transparentize($blue, 0.2)
+          left: 30%
+          transition: all 0.3s ease-in-out
+          -webkit-transition: all 0.3s ease-in-out
 
         &:hover
-          color: $black
-          border-bottom: solid 4px $blue
+          &:before
+            width: 100%
+            left: 0
+
+        // &:hover
+        //   color: $black
+        //   border-bottom: solid 4px $blue
 
 #full-menu.active
   top: 0
