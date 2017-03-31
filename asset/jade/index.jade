@@ -15,14 +15,16 @@ html(lang='en')
     .container
       .row.reveal-header
         .home-header
-      h1 About Us
+      .row
+        h1 About Us
       .row.reveal
         .about-us-cols
           h2 Dignitas Youth at UofT is a student group of young leaders united for Change.
           .links-white
             a(href="./about.html") Find out more about us!
         .about-us-cols
-      h1 Our Events and Posts
+      .row
+        h1 Our Events and Posts
       .row.reveal
         .recent-activities-left
           .activities-left-1
@@ -46,7 +48,8 @@ html(lang='en')
             h3 HIV/AIDS Research Seminar
             p Hear from the world’s leading researchers in HIV/AIDS and their current progress in emerging HIV prevention strategies and HIV-related health interventions.
             a(href="./post-2016-03-05.html") Read More
-      a.button1.reveal(href="./blog.html") Read More Posts
+      .row
+        a.button1.reveal(href="./blog.html") Read More Posts
 
       include contact
 
